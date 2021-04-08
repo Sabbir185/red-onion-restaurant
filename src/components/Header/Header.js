@@ -1,9 +1,10 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SearchBar from '../SearchBar/SearchBar';
 import logo from '../../images/logo.png'
 import './Header.css'
+
 
 const Header = () => {
 
