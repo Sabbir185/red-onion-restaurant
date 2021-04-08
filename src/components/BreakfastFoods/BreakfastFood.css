@@ -1,0 +1,19 @@
+.food-card{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 40px rgb(201, 201, 201);
+    border: none;
+}
+
+.img-div{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(241, 236, 219);
+    border-radius: 20px;
+    height: 210px;
+}
+.img-food{
+    display: block;
+    margin: auto;
+    width: 180px;
+}

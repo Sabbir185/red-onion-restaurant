@@ -4,7 +4,7 @@ import bg from "../../images/bannerbackground.png"
 import './SearchBar.css'
 
 const SearchBar = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
 
     const styleShit = {

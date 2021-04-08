@@ -1,12 +1,12 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SearchBar from '../SearchBar/SearchBar';
 import logo from '../../images/logo.png'
 import './Header.css'
 
 const Header = () => {
-    
+
 
     return (
         <div>
@@ -30,7 +30,7 @@ const Header = () => {
             <div className="row">
                 <div className="col"></div>
                 <div className="col-sm-8 col-md-8 col-lg-6 col-xlg-6 mt-3">
-                    <Nav variant="tabs" defaultActiveKey="/home" className="justify-content-center">
+                    <Nav variant="tabs" defaultActiveKey="/breakfast" className="justify-content-center">
                         <Nav.Item>
                             <Link to='/breakfast' className='nav-link mr-3'>Breakfast</Link>
                         </Nav.Item>
