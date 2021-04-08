@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../Header/Header';
 import dinnerData from '../../fakeData/dinner.json'
 import BreakfastFoods from '../BreakfastFoods/BreakfastFoods';
 import './Dinner.css'
@@ -15,7 +14,6 @@ const Dinner = () => {
 
     return (
         <div>
-            <Header></Header>
 
             {/* inherit design from BreakfastFoods but different data is loading */}
             <div className='dinner-style mt-4'>

@@ -7,6 +7,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Breakfast from '../Breakfast/Breakfast'
+import Lunch from '../Lunch/Lunch'
+import Dinner from '../Dinner/Dinner'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -20,8 +22,8 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
+        <Box p={3} >
+          <Typography >{children}</Typography>
         </Box>
       )}
     </div>
@@ -68,28 +70,34 @@ export default function NavTabs() {
     setValue(newValue);
   };
 
+  const textStyle = {
+    textDecoration:'none',
+    fontWeight: '600'
+  }
+  
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="" >
         <Tabs
           variant="fullWidth"
           value={value}
+          textColor="info"
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Page One" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Page Two" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Page Three" href="/spam" {...a11yProps(2)} />
+          <LinkTab label="Breakfast" {...a11yProps(0)} style={textStyle}/>
+          <LinkTab label="Lunch" {...a11yProps(1)} style={textStyle}/>
+          <LinkTab label="Dinner" {...a11yProps(2)} style={textStyle}/>
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
         <Breakfast></Breakfast>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Page Two
+        <Lunch></Lunch>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Page Three
+        <Dinner></Dinner>
       </TabPanel>
     </div>
   );

@@ -28,23 +28,6 @@ const Header = () => {
                 <SearchBar></SearchBar>
             </div>
 
-            <div className="row">
-                <div className="col"></div>
-                <div className="col-sm-8 col-md-8 col-lg-6 col-xlg-6 mt-3">
-                    <Nav variant="tabs" className="justify-content-center">
-                        <Nav.Item>
-                            <Link to='/breakfast' className='nav-link mr-3 font-weight-bold'>Breakfast</Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Link to='/lunch' className='nav-link mr-3 font-weight-bold'>Lunch</Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Link to='/dinner' className='nav-link mr-3 font-weight-bold'>Dinner</Link>
-                        </Nav.Item>
-                    </Nav>
-                </div>
-                <div className="col"></div>
-            </div>
         </div>
     );
 };

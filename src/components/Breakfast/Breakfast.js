@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../Header/Header';
 import breakfastData from '../../fakeData/breakfast.json'
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -16,7 +15,6 @@ const Breakfast = () => {
 
     return (
         <div>
-            <Header></Header>
             <div className='bk-style mt-4'>
                 {
                     breakfast.map(item => <BreakfastFoods key={item.url} items={item}></BreakfastFoods>)
