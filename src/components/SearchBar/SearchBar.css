@@ -1,3 +1,8 @@
-.bg-style{
-   
+.input-st:focus{
+   outline-color: rgb(13, 211, 145);
+   padding: 6px
+}
+
+.input-st{
+    padding: 5px;
 }
