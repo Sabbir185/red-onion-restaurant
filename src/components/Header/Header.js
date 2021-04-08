@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SearchBar from '../SearchBar/SearchBar';
 
 const Header = () => {
     return (
@@ -17,6 +18,10 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+
+            <div>
+                <SearchBar></SearchBar>
+            </div>
         </div>
     );
 };
