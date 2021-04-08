@@ -4,3 +4,16 @@
     grid-gap: 20px;
     box-shadow: 1px 1px 20px rgb(224, 224, 224);
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .bk-style {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+@media only screen and (max-width: 650px) {
+    .bk-style {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
