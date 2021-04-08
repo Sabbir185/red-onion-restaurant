@@ -1,0 +1,19 @@
+.dinner-style{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    box-shadow: 1px 1px 20px rgb(224, 224, 224);
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .dinner-style {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+@media only screen and (max-width: 680px) {
+    .dinner-style {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }

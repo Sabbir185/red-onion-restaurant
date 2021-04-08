@@ -14,9 +14,9 @@ const BreakfastFoods = (props) => {
                     <Card.Img variant="top" src={url} className='img-food'/>
                 </div>
                 <Card.Body>
-                    <Card.Text> <p>{name}</p> </Card.Text>
+                    <Card.Text> <h6>{name}</h6> </Card.Text>
                     <Card.Text> {title} </Card.Text>
-                    <Card.Text> <h6>Price : ${price}</h6> </Card.Text>
+                    <Card.Text> <h6 className='text-info'>Price : ${price}</h6> </Card.Text>
                     <div className='d-flex justify-content-end'>
                         <Button variant="primary" size="sm" className='mr-2'>Add Cart</Button>
                         <Button variant="primary" size="sm">Buy Now</Button>
