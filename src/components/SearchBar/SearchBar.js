@@ -19,7 +19,7 @@ const SearchBar = () => {
 
             <form onSubmit={handleSubmit(onSubmit)} >
                 <div className='d-flex justify-content-center align-items-center'>
-                    <input {...register("name", { required: true })} className='input-st' />
+                    <input {...register("name", { required: true })} className='input-st' placeholder='Search food items'/>
                     <input type="submit" className='btn btn-success ml-2'/>
                 </div>
                 {errors.name && <span className='d-block text-danger'>Food Name is required</span>}

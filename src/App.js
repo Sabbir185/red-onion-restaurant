@@ -6,6 +6,9 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import Breakfast from './components/Breakfast/Breakfast';
+import Dinner from './components/Dinner/Dinner';
+import Lunch from './components/Lunch/Lunch';
 
 function App() {
 
@@ -32,6 +35,18 @@ function App() {
 
             <Route path="/signUp">
               <Home />
+            </Route>
+
+            <Route path="/breakfast">
+              <Breakfast />
+            </Route>
+
+            <Route path="/dinner">
+              <Dinner />
+            </Route>
+
+            <Route path="/lunch">
+              <Lunch />
             </Route>
 
           </Switch>

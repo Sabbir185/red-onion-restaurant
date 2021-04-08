@@ -6,6 +6,8 @@ import logo from '../../images/logo.png'
 import './Header.css'
 
 const Header = () => {
+    
+
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -23,6 +25,24 @@ const Header = () => {
 
             <div>
                 <SearchBar></SearchBar>
+            </div>
+
+            <div className="row">
+                <div className="col"></div>
+                <div className="col-sm-8 col-md-8 col-lg-6 col-xlg-6 mt-3">
+                    <Nav variant="tabs" defaultActiveKey="/home" className="justify-content-center">
+                        <Nav.Item>
+                            <Link to='/breakfast' className='nav-link mr-3'>Breakfast</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Link to='/lunch' className='nav-link mr-3'>Lunch</Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Link to='/dinner' className='nav-link mr-3'>Dinner</Link>
+                        </Nav.Item>
+                    </Nav>
+                </div>
+                <div className="col"></div>
             </div>
         </div>
     );
