@@ -2,12 +2,14 @@ import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SearchBar from '../SearchBar/SearchBar';
+import logo from '../../images/logo.png'
+import './Header.css'
 
 const Header = () => {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand> <Link to='/' className='navbar-brand'>React-Bootstrap</Link> </Navbar.Brand>
+                <Navbar.Brand> <Link to='/' className='navbar-brand'> <img className='logoS' src={logo} alt=""/> </Link> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
