@@ -1,0 +1,28 @@
+.img-style{
+    display: block;
+    margin-left:auto;
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
+.subcontainer{
+    border-bottom: 1px solid cyan;
+}
+
+
+@media only screen and (max-width: 776px) {
+    .img-style{    
+        margin:auto;
+    }
+    .text-style{
+        margin: auto;
+        padding-top: 20px;
+    }
+    
+  }
+
+@media only screen and (min-width: 777px) {
+    
+
+  }

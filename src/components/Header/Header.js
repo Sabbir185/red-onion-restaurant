@@ -27,7 +27,7 @@ const Header = () => {
             <div>
                 <SearchBar></SearchBar>
             </div>
-
+            
         </div>
     );
 };
